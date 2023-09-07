@@ -1,0 +1,39 @@
+﻿@model ASPNETMVCCRUD.Models.AddEmployeeViewModal
+@{
+}
+<h1>Add Employee</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email Address</label>
+        <input type="text" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+    </div>
+    <div class="col-md-6">
+        <label for="" class="form-label">Sex</label><br />
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" asp-for="Sex" value="true">
+            <label class="form-check-label">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" asp-for="Sex" value="false">
+            <label class="form-check-label">Female</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
